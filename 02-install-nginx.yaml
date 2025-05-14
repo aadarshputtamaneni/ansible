@@ -3,9 +3,9 @@
   become: yes
   tasks: installing the nginx server
   ansible.builtin.pakage:
-   - name: nginx
-     state: latest
+    - name: nginx
+      state: latest
   ansible.builtin.service:
-   - name: start nginx
-     state: stared
-     enabled: yes
+    - name: start nginx
+      state: stared
+      enabled: yes
