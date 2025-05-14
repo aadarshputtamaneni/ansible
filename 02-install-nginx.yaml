@@ -1,7 +1,6 @@
-
 - name: install and run nginx
   hosts: web
-  become: yes
+  become: yes # -b is become means root access
   tasks:
   - name: install nginx
     ansible.builtin.dnf:
