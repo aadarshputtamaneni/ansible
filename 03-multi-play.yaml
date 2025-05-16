@@ -9,4 +9,4 @@
   tasks:
   - name: task-1
     ansible.builtin.debug:
-      msg: " i am from play2 and task 2 "
+      msg: " i am from play2 and task 1 "
