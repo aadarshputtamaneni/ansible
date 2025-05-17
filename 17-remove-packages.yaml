@@ -1,8 +1,8 @@
-- name: install packages
+- name: remove packages
   hosts: web
   become: yes
   tasks:
-  - name: install packages
+  - name: remove packages
     ansible.builtin.dnf:
       name: "{{ item.name }}"
       state: "{{ item.state }}"
